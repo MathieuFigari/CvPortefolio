@@ -1,0 +1,89 @@
+{   
+  "links_portfolio": {
+    "portfolio" : "Mon PortFolio",
+    "about_me": "A propos",
+    "contact" : "Me contacter"
+  },
+
+    "basic_info": {
+      "description_header": "Bonjour",
+      "description": "Je suis Mathieu Figari, développeur FullStack JS fraichement diplomé, n'hésitez pas à parcourir mes différents projets ci dessous, je vous souhaite une très bonne visite",
+      "section_name": {
+        "about": "à propos de moi",
+        "projects": "Projets",
+        "skills": "Savoir-faire"
+      }
+    },
+    "projects": [
+      {
+        "title": "Blind Test",
+        "startDate": "2021",
+        "description": "Petit projet qui contient deux blind tests de 8 questions",
+        "images": [
+          "react-frontend-dev-portfolio/blindtest-jeu.png",
+          "react-frontend-dev-portfolio/blindtest-resultat.png"
+          
+        ],
+        "url": "https://blindtest-962e6.firebaseapp.com/",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          }
+        ]
+      },
+      {
+        "title": "Chibi Café",
+        "startDate": "2021",
+        "description": "Projet de fin de formation en Equipe, chibi Café dispose d'une partie vitrine et d'une partie boutique Ecommerce",
+        "images": [
+          "react-frontend-dev-portfolio/chibi-accueil.png",
+          "react-frontend-dev-portfolio/chibi-boutique.png",
+          "react-frontend-dev-portfolio/chibi-paiement.png"
+        ],
+        "url": "https://cafe-chibi.netlify.app/",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-postgresql-plain",
+            "name": "PostGres"
+          }
+        
+        ]
+      },
+      {
+        "title": "TodoList",
+        "startDate": "2022",
+        "description": "Todilist réalisé avec Angular et Ionic",
+        "infos" : "MAIL: test@mail.fr ,   MDP: 123456",
+        "images": [
+          "react-frontend-dev-portfolio/todolist.png",
+          "react-frontend-dev-portfolio/todolist-connexion.png"
+        ],
+        "url": "https://ma-todo-liste.netlify.app",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Ecrivez moi",
+      "informations": "Informations de contact",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "message": "Message"
+
+    }
+  }

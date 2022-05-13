@@ -1,0 +1,87 @@
+{
+
+  "links_portfolio": {
+    "portfolio" : "My PortFolio",
+    "about_me": "About",
+    "contact" : "Contact"
+  },
+
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "I am Mathieu Figari, FullStack JS developer, do not hesitate to browse my different projects below, I wish you a very good visit",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills"
+    }
+  },
+  "projects": [
+    {
+      "title": "Blind-Test",
+      "startDate": "2021",
+      "description": "Small project that contains two blind tests of 8 questions.",
+      "images": [
+          "react-frontend-dev-portfolio/blindtest-jeu.png",
+          "react-frontend-dev-portfolio/blindtest-resultat.png"
+      ],
+      "url": "https://blindtest-962e6.firebaseapp.com/",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        }
+      ]
+    },
+    {
+      "title": "Chibi Café",
+      "startDate": "2021",
+      "description": "End of training project in Team, chibi Café has a showcase part and an Ecommerce shop part",
+      "images": [
+        "react-frontend-dev-portfolio/chibi-accueil.png",
+          "react-frontend-dev-portfolio/chibi-boutique.png",
+          "react-frontend-dev-portfolio/chibi-paiement.png"
+      ],
+      "url": "https://cafe-chibi.netlify.app/",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostGres"
+        }
+      ]
+    },
+    {
+      "title": "Todolist",
+      "startDate": "2022",
+      "description": "Todilist made with Angular and Ionic",
+      "infos" : "MAIL: test@mail.fr ,   PASSWORD: 123456",
+      "images": [
+        "react-frontend-dev-portfolio/todolist.png",
+        "react-frontend-dev-portfolio/todolist-connexion.png"
+      ],
+      "url": "https://ma-todo-liste.netlify.app",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Write to me",
+    "informations": "Contact informations",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message"
+  }
+}

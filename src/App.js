@@ -8,19 +8,93 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
 import {Link} from "react-scroll";
 
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 class App extends Component {
 
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       foo: "bar",
       resumeData: {},
       sharedData: {},
     };
   }
+
+
+ slideInTop(elem, delay, duration, declic) {
+   gsap.fromTo(
+     elem, 
+     {
+       opacity: 0,
+       y: 200,
+     },
+     {
+       opacity: 1,
+       y: 0,
+       delay: delay || 0.1,
+       duration: duration || 0.6,
+       scrollTrigger: {
+         trigger: declic,
+         start: "top center",
+         end: "bottom center"
+       }
+     }
+   )
+ }
+ 
+ 
+ slideInleft(elem, delay, duration, declic) {
+  gsap.fromTo(
+    elem, 
+    {
+      opacity: 0,
+      x: -200,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      delay: delay || 0.1,
+      duration: duration || 0.6,
+      scrollTrigger: {
+        trigger: declic,
+        start: "top center",
+        end: "bottom center"
+      }
+    }
+  )
+}
+
+
+slideInright(elem, delay, duration, declic) {
+  gsap.fromTo(
+    elem, 
+    {
+      opacity: 0,
+      x: 800,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      delay: delay || 0.1,
+      duration: duration || 0.6,
+      scrollTrigger: {
+        trigger: declic,
+        start: "top center",
+        end: "bottom center"
+      }
+    }
+  )
+} 
+
+  
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
@@ -54,6 +128,7 @@ class App extends Component {
       window.$primaryLanguage,
       window.$secondaryLanguageIconId
     );
+    
   }
 
   loadResumeFromPath(path) {
@@ -146,14 +221,17 @@ class App extends Component {
           </div>
         </div>
         <About
+          slideInleft={this.slideInleft}
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
         />
         <Projects
+          slideInTop={this.slideInTop}
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
         <Skills
+          slideInright={this.slideInright}
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />

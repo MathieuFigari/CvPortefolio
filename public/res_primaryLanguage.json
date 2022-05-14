@@ -16,6 +16,7 @@
     },
     "projects": [
       {
+        "id" : "1",
         "title": "Blind Test",
         "startDate": "2021",
         "description": "Petit projet qui contient deux blind tests de 8 questions",
@@ -33,6 +34,7 @@
         ]
       },
       {
+        "id" : "2",
         "title": "Chibi Café",
         "startDate": "2021",
         "description": "Projet de fin de formation en Equipe, chibi Café dispose d'une partie vitrine et d'une partie boutique Ecommerce",
@@ -55,6 +57,7 @@
         ]
       },
       {
+        "id" : "3",
         "title": "TodoList",
         "startDate": "2022",
         "description": "Todilist réalisé avec Angular et Ionic",

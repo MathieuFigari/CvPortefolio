@@ -10,10 +10,19 @@ class Projects extends Component {
     };
   }
 
+
+  componentDidMount() {
+  
+    this.props.slideInTop("#containProjects", 0.1, 0.8, "#portfolio")
+  }
+
   render() {
     let detailsModalShow = (data) => {
       this.setState({ detailsModalShow: true, deps: data });
     };
+
+    
+
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
@@ -21,6 +30,7 @@ class Projects extends Component {
       var projects = this.props.resumeProjects.map(function (projects) {
         return (
           <div
+            id={projects.title}
             className="col-sm-12 col-md-6 col-lg-4"
             key={projects.title}
             style={{ cursor: "pointer" }}
@@ -54,7 +64,7 @@ class Projects extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
-            <div className="row mx-auto">{projects}</div>
+            <div id="containProjects" className="row mx-auto">{projects}</div>
           </div>
           <ProjectDetailsModal
             show={this.state.detailsModalShow}

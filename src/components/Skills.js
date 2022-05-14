@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
 class Skills extends Component {
+
+  componentDidMount() {
+  
+    this.props.slideInright("#containSkills", 0.2, 1.2, "#skills")
+  }
+
   render() {
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.skills;
@@ -32,7 +38,7 @@ class Skills extends Component {
               <span className="text-white">{sectionName}</span>
             </h1>
           </div>
-          <div className="col-md-12 text-center">
+          <div id="containSkills" className="col-md-12 text-center">
             <ul className="list-inline mx-auto skill-icon">{skills}</ul>
           </div>
         </div>

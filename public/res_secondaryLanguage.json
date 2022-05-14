@@ -17,6 +17,7 @@
   },
   "projects": [
     {
+      "id" : "1",
       "title": "Blind-Test",
       "startDate": "2021",
       "description": "Small project that contains two blind tests of 8 questions.",
@@ -33,6 +34,7 @@
       ]
     },
     {
+      "id" : "2",
       "title": "Chibi Café",
       "startDate": "2021",
       "description": "End of training project in Team, chibi Café has a showcase part and an Ecommerce shop part",
@@ -54,6 +56,7 @@
       ]
     },
     {
+      "id" : "3",
       "title": "Todolist",
       "startDate": "2022",
       "description": "Todilist made with Angular and Ionic",

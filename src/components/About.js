@@ -6,6 +6,21 @@ import reduxIcon from "@iconify/icons-logos/redux"
 
 
 class About extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+     
+    };
+  }
+
+
+  componentDidMount() {
+  
+    this.props.slideInleft("#containAbout", 0.1, 0.8, "#about")
+  }
+
+
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = this.props.sharedBasicInfo.image;
@@ -23,7 +38,7 @@ class About extends Component {
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
-          <div className="row center mx-auto mb-5">
+          <div id="containAbout" className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>

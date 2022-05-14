@@ -20,8 +20,8 @@
         "startDate": "2021",
         "description": "Petit projet qui contient deux blind tests de 8 questions",
         "images": [
-          "react-frontend-dev-portfolio/blindtest-jeu.png",
-          "react-frontend-dev-portfolio/blindtest-resultat.png"
+          "/blindtest-jeu.png",
+          "/blindtest-resultat.png"
           
         ],
         "url": "https://blindtest-962e6.firebaseapp.com/",
@@ -37,9 +37,9 @@
         "startDate": "2021",
         "description": "Projet de fin de formation en Equipe, chibi Café dispose d'une partie vitrine et d'une partie boutique Ecommerce",
         "images": [
-          "react-frontend-dev-portfolio/chibi-accueil.png",
-          "react-frontend-dev-portfolio/chibi-boutique.png",
-          "react-frontend-dev-portfolio/chibi-paiement.png"
+          "/chibi-accueil.png",
+          "/chibi-boutique.png",
+          "/chibi-paiement.png"
         ],
         "url": "https://cafe-chibi.netlify.app/",
         "technologies": [
@@ -60,8 +60,8 @@
         "description": "Todilist réalisé avec Angular et Ionic",
         "infos" : "MAIL: test@mail.fr ,   MDP: 123456",
         "images": [
-          "react-frontend-dev-portfolio/todolist.png",
-          "react-frontend-dev-portfolio/todolist-connexion.png"
+          "/todolist.png",
+          "/todolist-connexion.png"
         ],
         "url": "https://ma-todo-liste.netlify.app",
         "technologies": [
